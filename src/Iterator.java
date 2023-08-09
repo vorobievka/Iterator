@@ -3,8 +3,8 @@ public class Iterator<Integer> implements java.util.Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        cursor ++;
-        if(cursor >= Randoms.array.length) {
+        cursor++;
+        if (cursor >= Randoms.array.length) {
             return false;
         }
         return true;

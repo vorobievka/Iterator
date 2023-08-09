@@ -10,19 +10,17 @@ public class Randoms implements Iterable<Integer> {
         //...
         Integer a = 0;
         HashSet<Integer> r = new HashSet<Integer>();
-        while(r.size() < (max - min) ){
-            a = (int)((Math.random() * (max - min + 1)) + min);
-           r.add((int) a);
+        while (r.size() < (max - min)) {
+            a = (int) ((Math.random() * (max - min + 1)) + min);
+            r.add((int) a);
         }
         array = r.toArray(r.toArray(new Integer[r.size()]));
         System.out.println(Arrays.toString(array));
     }
 
-    //@NotNull
     @Override
     public Iterator<Integer> iterator() {
         return new Iterator();
     }
 
-    //...
 }
